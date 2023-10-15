@@ -17,5 +17,7 @@ jobs:
             password: ${{secrets.GITHUB_TOKEN}}
 
         - name: Build the Docker image
-          run: docker build .
+          run: |
+            docker build . --tag ghcr.io/bjarnerornes/store:latest
+            docker push ghcr.io/bjarnerornes/store:latest
         
