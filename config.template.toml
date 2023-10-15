@@ -1,0 +1,11 @@
+[api]
+## Find these at your domeneshop account
+secret = ""
+token = ""
+
+[config]
+update_interval = 3600
+
+pointers = [
+      "some.domain.that.you.own.at.domeneshop",
+]
