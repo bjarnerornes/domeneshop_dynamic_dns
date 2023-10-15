@@ -72,7 +72,7 @@ class DomeneshopAPIClient:
             self.update_dns_pointer(pointer, ip)
 
 
-class GetPublicIP:
+class PublicIP:
     def __init__(self):
         pass
 
@@ -103,7 +103,7 @@ def main():
     api_client = DomeneshopAPIClient()
     api_client.from_config(config)
 
-    public_ip = GetPublicIP()
+    public_ip = PublicIP()
 
     sleep_for = int(max(0, config.update_interval - LOOP_GUARD))
     current_public_ip: str = None
