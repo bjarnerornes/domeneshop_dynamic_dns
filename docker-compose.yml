@@ -1,0 +1,13 @@
+services:
+  domeneshop_dns_updater:
+    container_name: domeneshop_dns_updater
+
+    restart: always
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
+    volumes:
+      - ./$CONFIG.toml:/app/domeneshop_dynamic_dns/config.toml:ro
+      
