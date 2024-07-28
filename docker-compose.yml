@@ -9,5 +9,5 @@ services:
       dockerfile: Dockerfile
     
     volumes:
-      - ./$CONFIG.toml:/app/domeneshop_dynamic_dns/config.toml:ro
+      - ./config.toml:/app/domeneshop_dynamic_dns/config.toml:ro
       
